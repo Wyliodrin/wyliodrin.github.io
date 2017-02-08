@@ -20,6 +20,7 @@ body {margin:0; padding:0; font-size:16px; font-family:"Open Sans", "Trebuchet M
 
 h1 {font-family:"Roboto", "Open Sans", "Trebuchet MS", Arial, Helvetica, sans-serif; margin-bottom:40px; font-size:30px; font-weight:bold;}
 h2 {font-family:"Roboto", "Open Sans", "Trebuchet MS", Arial, Helvetica, sans-serif; margin-bottom:40px; font-size:26px; font-weight:bold;}
+h3 {font-family:"Roboto", "Open Sans", "Trebuchet MS", Arial, Helvetica, sans-serif; margin-bottom:40px; font-size:26px; font-weight:normal;}
 p { font-size:14px; padding:5px 0; text-align:justify;}
 a {font-family:"Roboto", "Open Sans", "Trebuchet MS", Arial, Helvetica, sans-serif; text-decoration:none;}
 a:active, a:focus { text-decoration:none;}
@@ -35,6 +36,8 @@ a:active, a:focus { text-decoration:none;}
 .top-menu .nav li a{ border:0 !important; border-bottom:#090b0d solid 3px; color:#fff; padding:30px 15px 20px;}
 .top-menu .nav .active a, .top-menu .nav .active a:hover{ border-radius:0; border:0 !important; border-bottom:#e54225 solid 3px !important; background-color:#090b0d !important; color:#fff !important;}
 .top-menu .nav a:hover{ border-radius:0; border:0 !important; border-bottom:#090b0d solid 3px !important; background-color:#090b0d !important; color:#e54225 !important;}
+.top-menu .navbar{margin-bottom: 0px ;}
+.icon-bar { background:#fff;}
 
 .logo { padding:13px 0; float:left;}
 
@@ -163,6 +166,9 @@ a:active, a:focus { text-decoration:none;}
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 }
 
+@media (max-width: 1550px) {
+	.flex-direction-nav { display:none;}
+}
 
 @media (min-width: 1200px) {
 	.container { width: 100%; max-width:1400px;}
