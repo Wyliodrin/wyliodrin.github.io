@@ -32,3 +32,8 @@ app.config(function($routeProvider, $locationProvider) {
 
   $locationProvider.html5Mode(true);
 });
+
+app.controller ('WyliodrinController', ['$location', function ($location)
+{
+	$scope.link = $location;
+}]);

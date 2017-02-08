@@ -28,7 +28,7 @@
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="js/parallax.min.js"></script>
     </head>
-    <body class="loading" ng-app="wyliodrin">
+    <body class="loading" ng-app="wyliodrin" ng-controller="WyliodrinController">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -38,12 +38,12 @@
     	<div class="container">
         	<a href="#" class="logo"><img src="img/logo.png" width="263" height="47"></a>
         	<ul class="nav navbar-nav">
-              <li class="active"><a href="">Home</a></li>
-              <li><a href="features">Features</a></li>
-              <li><a href="get-involved">Get involved</a></li>
-              <li><a href="devices">Devices</a></li>
-              <li><a href="team">Team</a></li>
-              <li><a href="technology">Technology</a></li>
+              <li ng-class="{active: link==='/'}"><a href="/">Home</a></li>
+              <li ng-class="{active: link==='/features'}"><a href="/features">Features</a></li>
+              <li ng-class="{active: link==='/get-involved'}"><a href="/get-involved">Get involved</a></li>
+              <li ng-class="{active: link==='/devices'}"><a href="/devices">Devices</a></li>
+              <li ng-class="{active: link==='/team'}"><a href="/team">Team</a></li>
+              <li ng-class="{active: link==='/technology'}"><a href="/technology">Technology</a></li>
             </ul>
         </div>
     </section>
