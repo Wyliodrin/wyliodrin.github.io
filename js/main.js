@@ -29,4 +29,6 @@ app.config(function($routeProvider, $locationProvider) {
     templateUrl: 'technology.html',
     // controller: 'ChapterController'
   });
+
+  $locationProvider.html5Mode(true);
 });
