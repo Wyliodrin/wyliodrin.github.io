@@ -10,25 +10,23 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <link rel="icon" href="img/favicon-32x32.png" sizes="32x32"/>
-        <link rel="icon" href="img/favicon-192x192.png" sizes="192x192"/>
-        <link rel="apple-touch-icon-precomposed" href="img/favicon-180x180.png"/>
-        <meta name="msapplication-TileImage" content="img/favicon-270x270.png"/>
+        <link rel="icon" href="/img/favicon-32x32.png" sizes="32x32"/>
+        <link rel="icon" href="/img/favicon-192x192.png" sizes="192x192"/>
+        <link rel="apple-touch-icon-precomposed" href="/img/favicon-180x180.png"/>
+        <meta name="msapplication-TileImage" content="/img/favicon-270x270.png"/>
         
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,‌​100italic,300,300ita‌​lic,400italic,500,50‌​0italic,700,700itali‌​c,900italic,900' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 
-        <base href="/">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/bootstrap-select.css">
+        <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="/css/flexslider.css">
+        <link rel="stylesheet" href="/css/main.css">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-select.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/flexslider.css">
-        <link rel="stylesheet" href="css/main.css">
-
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script src="js/parallax.min.js"></script>
+        <script src="/js/parallax.min.js"></script>
     </head>
     <body class="loading" ng-app="wyliodrin" ng-controller="WyliodrinController">
         <!--[if lt IE 8]>
@@ -38,7 +36,7 @@
 
     <section class="top-menu">
     	<div class="container">
-        	<a href="#" class="logo"><img src="img/logo.png" width="263" height="47"></a>
+        	<a href="#" class="logo"><img src="/img/logo.png" width="263" height="47"></a>
         	<ul class="nav navbar-nav">
               <li class="<%= (current.source === 'index')?'active':'' %>"><a href="/">Home</a></li>
               <li class="<%= (current.source === 'features')?'active':'' %>"><a href="/features">Features</a></li>
@@ -51,7 +49,7 @@
     </section>
     
     <% if (current.path[0] === 'articles') { %> 
-        <%- partial (current.path[0] + '/article') %>
+        <%- partial ('/article') %>
     <% } else { %>
       <%- yield %>
     <% } %>
@@ -73,11 +71,11 @@
     </section>
     
     
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="/js/vendor/bootstrap.min.js"></script>
         
-        <script src="js/jquery.flexslider-min.js"></script>
+        <script src="/js/jquery.flexslider-min.js"></script>
         
 		<script type="text/javascript">
             $(window).load(function(){
@@ -94,9 +92,9 @@
             });
         </script>
 		
-		<script src="js/jquery.color-2.1.2.min.js"></script>
+		<script src="/js/jquery.color-2.1.2.min.js"></script>
 
-		<script src="js/bootstrap-select.js"></script>
-        <script src="js/main.js"></script>
+		<script src="/js/bootstrap-select.js"></script>
+        <script src="/js/main.js"></script>
     </body>
 </html>
