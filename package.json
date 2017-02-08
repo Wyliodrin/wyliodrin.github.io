@@ -1,7 +1,8 @@
 {
   "name": "",
   "version": "",
-  "devDependencies": {
+  "dependencies": {
+    "ejs": "^2.5.5",
     "express": "^4.14.1"
   }
 }
