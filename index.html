@@ -38,31 +38,29 @@
     	<div class="container">
         	<a href="#" class="logo"><img src="img/logo.png" width="263" height="47"></a>
         	<ul class="nav navbar-nav">
-              <li ng-class="{active: link==='/'}"><a href="/">Home</a></li>
-              <li ng-class="{active: link==='/features'}"><a href="/features">Features</a></li>
-              <li ng-class="{active: link==='/get-involved'}"><a href="/get-involved">Get involved</a></li>
-              <li ng-class="{active: link==='/devices'}"><a href="/devices">Devices</a></li>
-              <li ng-class="{active: link==='/team'}"><a href="/team">Team</a></li>
-              <li ng-class="{active: link==='/technology'}"><a href="/technology">Technology</a></li>
+              <li ng-class="{active: link.path()==='/'}"><a href="/">Home</a></li>
+              <li ng-class="{active: link.path()==='/features'}"><a href="/features">Features</a></li>
+              <li ng-class="{active: link.path()==='/get-involved'}"><a href="/get-involved">Get involved</a></li>
+              <li ng-class="{active: link.path()==='/devices'}"><a href="/devices">Devices</a></li>
+              <li ng-class="{active: link.path()==='/team'}"><a href="/team">Team</a></li>
+              <li ng-class="{active: link.path()==='/technology'}"><a href="/technology">Technology</a></li>
             </ul>
         </div>
     </section>
-    
     
     <div ng-view>
     </div>
 
 
-
     <section class="footer">
     	<div class="container">
         	<ul class="nav navbar-nav">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="features.html">Features</a></li>
-              <li><a href="get-involved.html">Get involved</a></li>
-              <li><a href="devices.html">Devices</a></li>
-              <li><a href="team.html">Team</a></li>
-              <li><a href="technology.html">Technology</a></li>
+              <li ng-class="{active: link.path()==='/'}"><a href="/">Home</a></li>
+              <li ng-class="{active: link.path()==='/features'}"><a href="/features">Features</a></li>
+              <li ng-class="{active: link.path()==='/get-involved'}"><a href="/get-involved">Get involved</a></li>
+              <li ng-class="{active: link.path()==='/devices'}"><a href="/devices">Devices</a></li>
+              <li ng-class="{active: link.path()==='/team'}"><a href="/team">Team</a></li>
+              <li ng-class="{active: link.path()==='/technology'}"><a href="/technology">Technology</a></li>
               <li><a href="https://gitter.im/Wyliodrin/WyliodrinSTUDIO?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge" target="_blank"><img src="https://badges.gitter.im/Wyliodrin/WyliodrinSTUDIO.svg"></a></li>
             </ul>
         </div>
