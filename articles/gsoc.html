@@ -29,7 +29,7 @@
         <script src="/js/parallax.min.js"></script>
     </head>
 
-    <body class="loading secondary" ng-app="wyliodrin" ng-controller="WyliodrinController">
+    <body class="loading secondary newsbox" ng-app="wyliodrin" ng-controller="WyliodrinController">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -80,10 +80,146 @@
         <div class="col-md-12">
         	<div class="container">
                 <div class="col-md-3 newstxt">
-					<img src="/img/news/GSoC.jpg">
+					<img src="/img/news/gsoc.jpg">
 				</div>
 				<div class="col-md-9 newstxt">
-                    <h1>We are applying for Google Summer of Code</h1><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+                    <h1>We are applying for Google Summer of Code</h1><p>We are very exited to announce thet we are applying for GSoC 2017. We have some really nice projects proposed.</p>
+<h2>Stand alone application</h2><p>Wyliodrin STUDIO is currently available as a Chrome Application. That means that it currently runs on Chrome OS and any other system where Google Chrome is available.</p>
+<p>Google has announced that it will retire Chrome Applications from all the platforms other than the Chromebook. While Chromebook users won&#39;t be affected, users using other systems will not be able to use Wyliodrin STUDIO. The solution to this is to port Wyliodrin STUDIO as a stand alone application. There are two ways of doing this, out of which you can choose the prefered one:</p>
+<ul>
+<li><a href="http://electron.atom.io/">Electron</a></li>
+<li><a href="https://nwjs.io/">NW.js</a></li>
+</ul>
+<p>There are ups and downs for each of the two, tangiblejs makes a <a href="http://tangiblejs.com/posts/nw-js-and-electron-compared-2016-edition">comparison</a> between the two.</p>
+<p>Our final goal is to be able to maintain the Chromebook version and the stand alone version in one code base. Based on the grunt command issued, it would build one or the other.</p>
+<h3>Knowledge required</h3><ul>
+<li>NodeJS (javascript)</li>
+<li>Grunt build tools</li>
+<li>AngularJS</li>
+</ul>
+<h3>Mentors</h3><ul>
+<li><a href="https://github.com/serban-razvan">Razvan Serban</a></li>
+<li><a href="https://github.com/valexandru">Alexandru Vochescu</a></li>
+</ul>
+<h2>Update visual programming</h2><p>Visual programming is one of the programming langguages supported by Wyliodrin STUDIO. Visual programming helps first timers to write an application in a graphical way by dragging blocks (similar to Scratch). What is more, users can visualise the coresponding python source code as it gets generated on the fly. This whole visual environment is an implementation of Google <a href="https://developers.google.com/blockly/">Blockly</a>.</p>
+<p>As part of implementing Blockly, we wrote several blocks for sensors and peripherals control and access. Some of these visual elements are currently outdated. In addition, we would like to add a new feature which would allow users to create the visual blocks they desire.</p>
+<p>Features that we would like to add are:</p>
+<ul>
+<li>improve UI (redesign of the toolbox)</li>
+<li>rethink some of the blocks</li>
+<li>rewrite some outdated blocks (facebook, etc)</li>
+<li>allow users to create new blocks</li>
+</ul>
+<h3>Knowledge required</h3><ul>
+<li>Javascript</li>
+<li>Familiarity with blockly </li>
+<li>Python (for writing the blocks generator)</li>
+</ul>
+<h3>Mentor</h3><ul>
+<li><a href="https://github.com/ioanaculic">Ioana Culic</a></li>
+</ul>
+<h2>Support additional firmware</h2><p>Support embedded hardware platforms (OpenMote, TelosB, etc.) and different embedded OSes (RIOT-OS, ContikiOS, OpenWSN, etc.)</p>
+<p>Wyliodryn STUDIO has an experimental version that allows users to program an OpenMote (<a href="http://www.openmote.com/">http://www.openmote.com/</a>) that is attached to a board (Raspberry Pi only at this moment). This experimental version supports only RIOT-OS (<a href="https://riot-os.org/">https://riot-os.org/</a>).</p>
+<p>For this project the objective is to extend the supported embedded devices and operating systems. The goal is to have a version that is able to re-flash and execute other commands on OpenMote and TelosB-like motes (<a href="https://telosbsensors.wordpress.com/">https://telosbsensors.wordpress.com/</a>); and suppport the two most used Real-Time operating systems: RIOT-OS and ContikiOS (<a href="http://www.contiki-os.org/">http://www.contiki-os.org/</a>).</p>
+<p>Some features that will be required and that are not available now include: </p>
+<ul>
+<li>updating the BSL script for embedded devices;</li>
+<li>remotely reseting the embedded device;</li>
+<li>erase the flash memory</li>
+<li>update the embedded OS version (repository)</li>
+</ul>
+<p>An advanced feature would be to have files on the user application that are linked to files internal to the OS (such as drivers, etc.) and allow users to easily change these files.</p>
+<p>The project should be developed in a way that easily allow new platforms and OSes to be integrated in the future.</p>
+<h3>Knowlegde needed</h3><ul>
+<li>Python</li>
+<li>C language</li>
+<li>Bash scripting and UNIX commands</li>
+<li>Javascript</li>
+</ul>
+<h3>Mentors</h3><ul>
+<li><a href="https://github.com/pedrohenriquegomes">Pedro Henrique Gomes</a>, USC</li>
+<li><a href="https://github.com/jasonatran">Jason Tran</a>, USC</li>
+<li><a href="https://github.com/valexandru">Razvan Serban</a>, Wyliodrin</li>
+</ul>
+<h2>Schematics Editor</h2><p>Every project created using Wyliodrin STUDIO can have a <a href="http://fritzing.org/home/">Fritzing</a> schematics attached to it. This way if a user shares a project to another one, the project will contain all the information needed to be replicated. For this, users need to download Fritzing, draw the schematics, export it as SVG and finally import it into Wyliodrin STUDIO. </p>
+<p>This project&#39;s idea is to allow users to draw the schematics directly in Wyliodrin STUDIO (an example of how this should look like <a href="https://github.com/cdog/breadboard-circuits">breadboard-circuits</a> ). The implies importing the Fritzing components and allowing users to place them in the schematics.</p>
+<h3>Knowledge needed</h3><ul>
+<li>Javascript</li>
+<li>D3.js (or similar)</li>
+<li>HTML</li>
+</ul>
+<h3>Mentors</h3><ul>
+<li><a href="https://github.com/ioanaculic">Ioana Culic</a></li>
+<li><a href="https://github.com/razvan-serban">Razvan Serban</a></li>
+</ul>
+<h2>Improve Dashboard</h2><p>Each Wyliodrin STUDIO project has assigned a dashboard where users can drag and drop graphs and plot data on them. At the momment, the dashboard feature is not very complex. Graphs can be added one next to the other and can be rearranged only by moving them left or right. Graphs can only display time series or scalar values.</p>
+<p>The idea of this project is to design and implement a new dashboard, that would allow:</p>
+<ul>
+<li>drag and drop graphs</li>
+<li>move graphs around the dashboard</li>
+<li>plot multiple signals on the same graph</li>
+<li>display non-time series</li>
+</ul>
+<h3>Mentors</h3><ul>
+<li><a href="https://github.com/ioanaculic">Ioana Culic</a></li>
+<li><a href="https://github.com/oviska">Ovidiu Stoica</a></li>
+</ul>
+<h3>Knowledge required</h3><ul>
+<li>Javascript<ul>
+<li><a href="http://www.highcharts.com/">highcharts</a></li>
+</ul>
+</li>
+<li>HTML</li>
+<li>CSS</li>
+<li>AngularJS</li>
+</ul>
+<h2>Scientific graphs</h2><p>Each Wyliodrin STUDIO project has assigned a dashboard where users can drag and drop graphs and plot data on them. In order to send data to the dashboard, users need to import the <a href="https://github.com/wyliodrin/libwyliodrin">libwyliodrin</a> library and use its functions; eg:</p>
+<pre><code class="language-python">import wyliodrin
+
+# get a value somehow
+
+wyliodrin.sendSignal (&#39;signal&#39;, value)
+</code></pre>
+<p>The code presented above will draw a point on the dashboard. </p>
+<p>We aim to create a way to make some more complex cumputations and display them on the graphs. Python has the <em>pandas</em> and <em>numpy</em> libraries (and many more) that allow users to process data. These libraries open a window on the running device and display the data. However, in our case we deed the values to be displayed in the computer&#39;s browser, not on the embedded board running the application.</p>
+<p>The idea of this project is to write a <em>matplotlib</em> backend that instead of drawing the graph would send an SVG to Wyliodrin STUDIO.</p>
+<h3>Knowlegde needed</h3><ul>
+<li>Python<ul>
+<li><a href="http://matplotlib.org">matplotlib</a></li>
+</ul>
+</li>
+<li>Javascript (Ndoejs)</li>
+<li>AngularJS</li>
+</ul>
+<h2>Write Tutorials</h2><p>Wyliodrin STUDIO is designed with education in mind. When a users opens it the first time, he will ask the question &quot;Now what?&quot;.</p>
+<p>It is eally important for us to have solid set of getting started tutorials that users can use to start working with IoT. A tutorial implies:</p>
+<ul>
+<li>writing a notebook with the steps that a user needs to take to be able to write the application;</li>
+<li>write the sample application</li>
+<li>draw the schematics of the hardware</li>
+</ul>
+<h3>Knowledge needed</h3><ul>
+<li>Python</li>
+<li>Markdown</li>
+<li>Basic Electrical Enineering (to build the device)</li>
+</ul>
+<h3>Mentors</h3><ul>
+<li><a href="https://github.com/alexandruradovici">Alexandru Radovici</a></li>
+<li><a href="https://github.com/ioanaculic">Ioana Culic</a></li>
+</ul>
+<h2>Improve Shell</h2><p>Wyliodrin STUDIO allows users to open a shell directly to the device they are connected to. For this, it uses <a href="https://github.com/sourcelair/xterm.js">xterm.js</a>. </p>
+<p>For this project we would like to enhance xterm.js to have the following features implemented for the shell:</p>
+<ul>
+<li>scroll up and down</li>
+<li>select </li>
+<li>copy and paste</li>
+</ul>
+<h3>Mentors</h3><ul>
+<li><a href="https://github.com/serban-razvan">Razvan Serban</a></li>
+<li><a href="https://github.com/valexandru">Alexandru Vochescu</a></li>
+</ul>
+<h2>Document protocol</h2><p>Wyliodrin STUDIO allows users to control the embedded distances from the browser. This happens by using messages through which the browser gives commands to the board, theb the board executes them and sends back an answer.</p>
+<p>For this project we would like to have the protcol used documented.</p>
                 </div>
             </div>
         </div>
@@ -93,13 +229,13 @@
     <section class="usedby">
       <div class="container">
           	<div class="col-md-12"><h3>Wyliodrin technology used by</h3></div>
-			<div class="col-md-1"></div>
-            <div class="col-md-2"><img src="/img/inlea.png" alt="INLEA" tittle="INLEA"></div>
-            <div class="col-md-2"><img src="/img/alpdillingen.png" alt="Akademie für Lehrerfortbildung und Personalführung, Dillingen" tittle="Akademie für Lehrerfortbildung und Personalführung, Dillingen"></div>
-            <div class="col-md-2"><img src="/img/usc.png" alt="University of Southern California" tittle="University of Southern California"></div>
-            <div class="col-md-2"><img src="/img/poli.png" alt="Universitatea Politehnica din Bucuresti" tittle="Universitatea Politehnica din Bucuresti"></div>
-            <div class="col-md-2"><img src="/img/techlounge.png" alt="Tech Lounge" tittle="Tech Lounge"></div>
-            <div class="col-md-1"></div>
+			<div class="col-md-1 col-sm-0 col-xs-0"></div>
+            <div class="col-md-2 col-sm-4 col-xs-6"><img src="/img/inlea.png" alt="INLEA" tittle="INLEA"></div>
+            <div class="col-md-2 col-sm-4 col-xs-6"><img src="/img/alpdillingen.png" alt="Akademie für Lehrerfortbildung und Personalführung, Dillingen" tittle="Akademie für Lehrerfortbildung und Personalführung, Dillingen"></div>
+            <div class="col-md-2 col-sm-4 col-xs-6"><img src="/img/usc.png" alt="University of Southern California" tittle="University of Southern California"></div>
+            <div class="col-md-2 col-sm-6 col-xs-6"><img src="/img/poli.png" alt="Universitatea Politehnica din Bucuresti" tittle="Universitatea Politehnica din Bucuresti"></div>
+            <div class="col-md-2 col-sm-6 col-xs-12"><img src="/img/techlounge.png" alt="Tech Lounge" tittle="Tech Lounge"></div>
+            <div class="col-md-1 col-sm-0 col-xs-0"></div>
         </div>
     </section>
 

@@ -29,7 +29,7 @@
         <script src="/js/parallax.min.js"></script>
     </head>
 
-    <body class="loading " ng-app="wyliodrin" ng-controller="WyliodrinController">
+    <body class="loading  " ng-app="wyliodrin" ng-controller="WyliodrinController">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -73,10 +73,10 @@
       <div class="flexslider">
               <ul class="slides">
                 <li>
-                  <div class="col-md-6">
+                  <div class="col-md-6 col-sm-12">
                       <img src="/img/slide/notebook.png">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-12">
                       <div class="flextext">Welcome to <strong>Wyliodrin STUDIO</strong></div>
                     </div>
                 </li>
@@ -181,16 +181,18 @@
         </div>
         <div class="download">
           <div class="container">
-              <div class="col-md-6"></div>
-                <div class="col-md-6">
-                  <a href="https://chrome.google.com/webstore/detail/wyliodrin-studio/eajalplbgimhaodcnncciojhbpcogkan" target="_blank" class="dwlbtn">
-                      <img src="/img/chromestore.png">
-                        <div class="dwltxt">Download from<br><span>Google Chrome Store</span></div>
-                    </a>
-                    <a href="https://github.com/Wyliodrin/WyliodrinSTUDIO" target="_blank" class="dwlbtn">
-                      <img src="/img/github.png">
-                        <div class="dwltxt gittxt">Fork on GitHub</div>
-                    </a>
+              <div class="col-md-6 resphide"></div>
+                <div class="col-md-6 respwidth">
+                  	<div class="resp-center">
+						<a href="https://chrome.google.com/webstore/detail/wyliodrin-studio/eajalplbgimhaodcnncciojhbpcogkan" target="_blank" class="dwlbtn">
+						  <img src="/img/chromestore.png">
+							<div class="dwltxt">Download from<br><span>Google Chrome Store</span></div>
+						</a>
+						<a href="https://github.com/Wyliodrin/WyliodrinSTUDIO" target="_blank" class="dwlbtn">
+						  <img src="/img/github.png">
+							<div class="dwltxt gittxt">Fork on GitHub</div>
+						</a>
+					</div>
                 </div>
             </div>
         </div>
@@ -209,10 +211,18 @@
       <ul>
             
               <li>
-                  <div class="newstime">February 29, 2017</div>
+                  <div class="newstime">February 9, 2017</div>
                     <div class="newstext">
                       We are applying for Google Summer of Code
                         <a href="/articles/gsoc">[Read more]</a>
+                    </div>
+                </li>
+              
+              <li>
+                  <div class="newstime">January 20, 2017</div>
+                    <div class="newstext">
+                      We are working together with USC to bring OpenMote and other firmware to Wyliodrin STUDIO.
+                        <a href="/articles/usc">[Read more]</a>
                     </div>
                 </li>
               
@@ -225,13 +235,13 @@
     <section class="usedby">
       <div class="container">
           	<div class="col-md-12"><h3>Wyliodrin technology used by</h3></div>
-			<div class="col-md-1"></div>
-            <div class="col-md-2"><img src="/img/inlea.png" alt="INLEA" tittle="INLEA"></div>
-            <div class="col-md-2"><img src="/img/alpdillingen.png" alt="Akademie für Lehrerfortbildung und Personalführung, Dillingen" tittle="Akademie für Lehrerfortbildung und Personalführung, Dillingen"></div>
-            <div class="col-md-2"><img src="/img/usc.png" alt="University of Southern California" tittle="University of Southern California"></div>
-            <div class="col-md-2"><img src="/img/poli.png" alt="Universitatea Politehnica din Bucuresti" tittle="Universitatea Politehnica din Bucuresti"></div>
-            <div class="col-md-2"><img src="/img/techlounge.png" alt="Tech Lounge" tittle="Tech Lounge"></div>
-            <div class="col-md-1"></div>
+			<div class="col-md-1 col-sm-0 col-xs-0"></div>
+            <div class="col-md-2 col-sm-4 col-xs-6"><img src="/img/inlea.png" alt="INLEA" tittle="INLEA"></div>
+            <div class="col-md-2 col-sm-4 col-xs-6"><img src="/img/alpdillingen.png" alt="Akademie für Lehrerfortbildung und Personalführung, Dillingen" tittle="Akademie für Lehrerfortbildung und Personalführung, Dillingen"></div>
+            <div class="col-md-2 col-sm-4 col-xs-6"><img src="/img/usc.png" alt="University of Southern California" tittle="University of Southern California"></div>
+            <div class="col-md-2 col-sm-6 col-xs-6"><img src="/img/poli.png" alt="Universitatea Politehnica din Bucuresti" tittle="Universitatea Politehnica din Bucuresti"></div>
+            <div class="col-md-2 col-sm-6 col-xs-12"><img src="/img/techlounge.png" alt="Tech Lounge" tittle="Tech Lounge"></div>
+            <div class="col-md-1 col-sm-0 col-xs-0"></div>
         </div>
     </section>
 
