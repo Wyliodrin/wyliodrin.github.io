@@ -260,6 +260,7 @@ a:active, a:focus { text-decoration:none;}
 	.secondary-text { font-size:30px;}
 	.techimg { width:100%;}
 	.techimg img { max-width:100% !important; margin-bottom:50px;}
+	.featureimg { width:100%;}
 }
 
 @media (max-width: 767px) {
