@@ -68,8 +68,26 @@
     </section>
     
     <% if (current.path[0] === 'articles') { %> 
-        <!-- place here article -->
-      <%- yield %>
+    <section class="top" data-parallax="scroll" data-image-src="/img/wstudio-bg.jpg" data-speed="0.4">
+    	<div class="container">
+            <div class="col-md-12">
+                <div class="secondary-text">The latest <strong>news</strong></div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="maincontent">
+        <div class="col-md-12">
+        	<div class="container">
+                <div class="col-md-3 newstxt">
+					<img src="/img/news/GSoC.jpg">
+				</div>
+				<div class="col-md-9 newstxt">
+                    <%- yield %>
+                </div>
+            </div>
+        </div>
+    </section>
     <% } else { %>
       <%- yield %>
     <% } %>
