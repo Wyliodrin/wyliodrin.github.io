@@ -83,15 +83,17 @@
                 	<h1>Two projects</h1>
                 </div>
                 <div class="col-md-6">
-                    <h2 class="text-center">Wyliodrin STUDIO</h2>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe.</p>
+                    <h2 class="text-center">Wyliodrin STUDIO App</h2>
+                    <p>Wyliodrin STUDIO is currently available as a Chrome Application. That means that it currently runs on Chrome OS and any other system where Google Chrome is available. As Google applications will soon be retired from all the platforms other than the Chromebook, we need to make Wyliodrin STUDIO a stand alone application. Our final goal is to be able to maintain the Chromebook version and the stand alone version in one code base.</p>
+                    <p>Visual programming is one of the programming langguages supported by Wyliodrin STUDIO. Visual programming helps first timers to write an application in a graphical way by dragging blocks (similar to Scratch). As part of implementing it, we wrote several blocks for sensors and peripherals control and access. Some of these visual elements need to be brought up to date. In addition, we would like to add a new feature which would allow users to create the visual blocks they desire.</p>
                     <div class="text-center">
                     	<a href="https://github.com/Wyliodrin/WyliodrinSTUDIO" target="_blank">Fork Wyliodrin STUDIO</a>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <h2 class="text-center">Wyliodrin-app-server</h2>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                    <p>The server software that runs on the embedded device, manages the connection to Wyliodrin STUDIO and control of the devices via the interface. Wyliodrin STUDIO allows users to open a shell directly to the device they are connected to. For this, wyliodrin-app-server uses the xterm.js module.</p>
+                    <p>We would like to enhance xterm.js to have the following features implemented for the shell: scrolling, select, copy-paste.</p>
                 <div class="text-center">
                     	<a href="https://github.com/Wyliodrin/wyliodrin-app-server" target="_blank">Fork Wyliodrin-app-server</a>
                     </div>
@@ -102,7 +104,7 @@
         	<div class="container">
                 <div class="col-md-6 involvedtxt">
                     <h1>Translations</h1>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+                    <p>We want to make Wyliodrin STUDIO accessible to as many people as possible. THis is why the platform is designed to support multiple languages. We encourage people to add as many supported languages as possible.</p>
                 </div>
                 <div class="col-md-6 featureimg">
                     <img src="/img/secondary/languages.png">
@@ -116,11 +118,13 @@
                 </div>
                 <div class="col-md-6">
                     <h2 class="text-center">Wyliodrin-app-server</h2>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe.</p>
+                    <p>For a device to be compatible with Wyliodrin STUDIO, it needs to run the wyliodrin-app-server and the required modules and services. For now users can connect Raspberry Pi, UDOO Neo and BeagleBone Black boards. In addition, Arduino and OpenMote controllers can be programmed and controlled via Wyliodrin STUDIO through the a Linux embedded device (Raspberry Pi or other).</p>
+                    <p>We aim to extend the number of supported devices, both Linux based or controllers.</p>
                 </div>
                 <div class="col-md-6">
                     <h2 class="text-center">Libwyliodrin</h2>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                    <p>Libwyliodrin is a universal pin control library. It allows users to access the boards' pins by using Arduino-like functions. By using libwyliodrin function, applications can run on any supported board without any adjustments. In order to do that, libwyliodrin abstracts the embedded devices' functions for controlling the pins.</p>
+                    <p>So far libwyliodrin is compatible with Raspberry Pi, UDOO Neo, BeagleBone Black, Intel Galileo, Intel Edison and Red Pitaya. We would like to extend libwyliodrin to as many devices as possible and you can help us do that.</p>
                 </div>
             </div>
         </div>
@@ -129,17 +133,20 @@
                 <div class="col-md-4">
                     <div class="text-center secondary-icon"><img src="/img/secondary/bug-icon.png"></div>
                     <h2 class="text-center">Bug reporting</h2>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe.</p>
+                    <p>Wyliodrin STUDIO is a young project build by passionate people woking day and night. Together with the amount of coffee we drank and the lines of code we wrote, the number of bugs increased.</p>
+                    <p>Help us make this project more stable by reporting bugs and helping us fix them.</p>
                 </div>
                 <div class="col-md-4">
                 	<div class="text-center secondary-icon"><img src="/img/secondary/sugestion-icon.png"></div>
 				  <h2 class="text-center">Suggestions</h2>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                   <p>We created Wyliodrin STUDIO out of our need for an educational tool for Internet of Things. We put our teaching experience into the project and came up with the current platform.</p>
+                    <p>Help us improve Wyliodrin STUDIO and make it more useful by sharing your experience and especially your frustrations with building IoT applications.</p>
                 </div>
                 <div class="col-md-4">
                     <div class="text-center secondary-icon"><img src="/img/secondary/examples-icon.png"></div>
                   <h2 class="text-center">Tutorials / Examples</h2>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                    <p>Wyliodrin STUDIO is designed both for advanced users and for beginners. When some users open it the first time, they will ask the question "Now what?". It is really important for us to have a solid set of getting started tutorials that users can use to start building IoT applications.</p>
+                    <p>We wish to make it easy for everybody to be a part of the Internet of Things movement, this is why we need to keep on improving the tutorials library and you can help.</p>
                 </div>
             </div>
         </div>
