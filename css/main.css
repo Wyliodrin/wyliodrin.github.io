@@ -268,5 +268,6 @@ a:active, a:focus { text-decoration:none;}
 }
 
 @media (max-width: 540px) {
-
+	.dwlbtn {width: 130px;}
+	.dwlbtn img { float:none;}
 }
